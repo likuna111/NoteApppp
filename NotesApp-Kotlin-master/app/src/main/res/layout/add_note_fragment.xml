@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddNoteFragment">
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#DCAAAAAA"
+        android:textColor="@color/white"
+        android:padding="6dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:text="@string/tip_msg"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hint_tv"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="#FFF"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:useCompatPadding="true" />
+
+    <LinearLayout
+        android:id="@+id/progress_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/progress_dot_1"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/loading_circle" />
+
+        <View
+            android:id="@+id/progress_dot_2"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/loading_circle" />
+
+        <View
+            android:id="@+id/progress_dot_3"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/loading_circle" />
+
+        <View
+            android:id="@+id/progress_dot_4"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/loading_circle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_notes_found"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:lineSpacingExtra="12dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

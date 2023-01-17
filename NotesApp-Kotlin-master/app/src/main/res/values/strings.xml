@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="delete">Delete</string>
+    <string name="logout">Logout</string>
+    <string name="logout_msg">Please drop an email on <b>support@internshala.com</b> and tell us how we can improve.</string>
+    <string name="delete_notes">Are you sure you want to delete the selected notes?</string>
+    <string name="tip_msg">Tip: Tap to update. Long Press to delete.</string>
+    <string name="no_notes_found"><b>No Notes Found.</b> \nClick add button to write your first note.</string>
+
+</resources>
